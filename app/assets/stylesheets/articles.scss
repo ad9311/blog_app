@@ -1,3 +1,31 @@
-// Place all the styles related to the Articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+$smoke-color:  rgb(38, 40, 41);
+$bisque-color: bisque;
+$gainsboro-color: gainsboro;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $gainsboro-color;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.topbar {
+  width: 100%;
+  background-color: $smoke-color;
+  color: $bisque-color;
+}
+
+.forty-height {
+  height: 40px;
+}
+
+.sidebar {
+  background-color: gray;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  color: $bisque-color;
+  background-color: $smoke-color;
+}
