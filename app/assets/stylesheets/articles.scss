@@ -1,11 +1,14 @@
 $smoke-color:  rgb(38, 40, 41);
 $bisque-color: bisque;
 $gainsboro-color: gainsboro;
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   background-color: $gainsboro-color;
+  color: $smoke-color;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -17,10 +20,6 @@ body {
 
 .forty-height {
   height: 40px;
-}
-
-.sidebar {
-  background-color: gray;
 }
 
 footer {

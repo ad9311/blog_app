@@ -1,16 +1,37 @@
-<h1><%= @article.title %></h1>
-
-<p><%= @article.body %></p>
-
-<ul>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Destroy", article_path(@article),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
-</ul>
-
-<h2>Comments</h2>
-<%= render @article.comments %>
-
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
+<div class="pos-fixed top-0 topbar forty-height">
+  <nav class="pcon-4">
+    <ul class="forty-height d-flex justify-between align-items-center">
+      <li>
+        <%= link_to "Home", root_path %>
+      </li>
+      <li>
+        <%= link_to "New Article", new_article_path %>
+      </li>
+    </ul>
+  </nav>
+</div>
+<header class="pt-6 pcon-4 text-center">
+  <h1><%= @article.title %></h1>
+</header>
+<main class="pcon-4">
+  <p class="lh-3 fs-2"><%= @article.body %></p>
+  <ul>
+    <li class="fw-4"><%= link_to "Edit", edit_article_path(@article) %></li>
+    <li class="fw-4"><%= link_to "Destroy", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %></li>
+  </ul>
+  <div class="pt-6">
+    <div>
+      <h2>Comments</h2>
+      <%= render @article.comments %>
+    </div>
+    <div class="pt-4">
+      <h2>Add a comment:</h2>
+      <%= render 'comments/form' %>
+    </div>
+  </div>
+</main>
+<footer class="">
+  <div class="d-flex align-items-center pcon-4 forty-height">
+      <span>Created by Ángel Díaz</span>
+  </div>
+</footer>
