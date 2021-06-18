@@ -4,18 +4,14 @@
 
 This a web application that simulated how a blog app. In this blog app you are able to create, edit and delete articles as well as commenting on them.
 
-![screenshot](./app_screenshot.png)
+![home](https://raw.githubusercontent.com/ad9311/ad9311.github.io/main/resources/blog_app/home.png)
+![artile](https://raw.githubusercontent.com/ad9311/ad9311.github.io/main/resources/blog_app/article.png)
 
 ## Built With
 
 - Ruby on Rails
 - HTML
 - Sass/CSS
-
-## Live Demo
-
-[Live Demo](https://livedemo.com)
-
 
 ## Getting Started
 
