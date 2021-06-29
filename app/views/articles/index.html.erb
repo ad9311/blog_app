@@ -1,0 +1,30 @@
+<div class="pos-fixed top-0 topbar forty-height">
+  <nav class="pcon-4">
+    <ul class="forty-height d-flex justify-between align-items-center">
+      <li>
+        <%= link_to "Home", root_path %>
+      </li>
+      <li>
+        <%= link_to "New Article", new_article_path %>
+      </li>
+    </ul>
+  </nav>
+</div>
+<header class="pcon-4 text-center pt-6">
+  <h1 class="fs-6">Blog App!</h1>
+</header>
+<main class="pcon-4 pt-4">
+  <h3>Select an article to read</h3>
+  <ul>
+  <% @articles.each do |article| %>
+    <li class="pt-1 pl-2">
+      <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
+</main>
+<footer class="pos-fixed bottom-0">
+  <div class="d-flex align-items-center pcon-4 forty-height">
+      <span>Created by Ángel Díaz</span>
+  </div>
+</footer>

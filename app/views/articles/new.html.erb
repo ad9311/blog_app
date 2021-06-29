@@ -1,0 +1,25 @@
+<div class="pos-fixed top-0 topbar forty-height">
+  <nav class="pcon-4">
+    <ul class="forty-height d-flex justify-between align-items-center">
+      <li>
+        <%= link_to "Home", root_path %>
+      </li>
+      <li>
+        <%= link_to "New Article", new_article_path %>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="pcon-4 pt-6">
+  <div class="text-center">
+    <h1>Create a new Article</h1>
+  </div>
+  <div>
+    <%= render "form", article: @article %>
+  </div>
+</main>
+<footer class="pos-fixed bottom-0">
+  <div class="d-flex align-items-center pcon-4 forty-height">
+      <span>Created by Ángel Díaz</span>
+  </div>
+</footer>
